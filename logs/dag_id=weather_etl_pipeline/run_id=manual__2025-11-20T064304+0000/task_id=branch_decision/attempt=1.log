@@ -1,0 +1,16 @@
+{"timestamp":"2025-11-20T06:44:00.357168Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-20T06:44:00.358196Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_pipeline/weather_etl.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-20T06:44:00.386796Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_pipeline/weather_etl.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-20T06:44:00.386922Z","level":"warning","event":"The `airflow.operators.python.BranchPythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.BranchPythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_pipeline/weather_etl.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-11-20T06:44:00.419262Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:00.419683Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:00.420029Z","level":"info","event":"Current task name:branch_decision","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:00.420428Z","level":"info","event":"Dag name:weather_etl_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:00.420842Z","level":"info","event":"Done. Returned value was: good_data","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-20T06:44:00.420989Z","level":"info","event":"Branch into good_data","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
+{"timestamp":"2025-11-20T06:44:00.421387Z","level":"info","event":"Following branch {'good_data'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":146}
+{"timestamp":"2025-11-20T06:44:00.421682Z","level":"info","event":"Skipping tasks [('bad_data', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":185}
+{"timestamp":"2025-11-20T06:44:00.438674Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":943}
+{"timestamp":"2025-11-20T06:44:00.467755Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:00.468247Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:00.468755Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): branch_decision>","logger":"task.stdout"}

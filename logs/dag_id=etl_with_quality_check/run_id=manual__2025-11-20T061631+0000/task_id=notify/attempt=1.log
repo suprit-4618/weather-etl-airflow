@@ -1,0 +1,12 @@
+{"timestamp":"2025-11-20T06:16:39.769926Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-20T06:16:39.771253Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_with_quality_check.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-20T06:16:39.793631Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/etl_with_quality_check.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-20T06:16:39.816298Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:16:39.816823Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:16:39.817141Z","level":"info","event":"Current task name:notify","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:16:39.817414Z","level":"info","event":"Dag name:etl_with_quality_check","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:16:39.817821Z","level":"info","event":"ETL Completed Successfully. File: /opt/airflow/dags/etl_output_checked.csv","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:16:39.818288Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-20T06:16:39.830700Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:16:39.837418Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:16:39.837979Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): notify>","logger":"task.stdout"}

@@ -1,0 +1,16 @@
+{"timestamp":"2025-11-20T06:04:14.193545Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-20T06:04:14.195777Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/file_sensor_example.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-20T06:04:14.218892Z","level":"warning","event":"The `airflow.sensors.filesystem.FileSensor` attribute is deprecated. Please use `'airflow.providers.standard.sensors.filesystem.FileSensor'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/file_sensor_example.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-20T06:04:14.219031Z","level":"warning","event":"The `airflow.operators.bash.BashOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.bash.BashOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/file_sensor_example.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-11-20T06:04:14.241089Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:04:14.241791Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:04:14.242163Z","level":"info","event":"Current task name:wait_for_file","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:04:14.242422Z","level":"info","event":"Dag name:file_sensor_example","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:04:14.250429Z","level":"info","event":"Poking for file /opt/airflow/dags/sample.txt","logger":"airflow.task.operators.airflow.providers.standard.sensors.filesystem.FileSensor","filename":"filesystem.py","lineno":125}
+{"timestamp":"2025-11-20T06:04:14.254870Z","level":"info","event":"Found File /opt/airflow/dags/sample.txt last modified: 20251120060407","logger":"airflow.task.operators.airflow.providers.standard.sensors.filesystem.FileSensor","filename":"filesystem.py","lineno":129}
+{"timestamp":"2025-11-20T06:04:14.254994Z","level":"info","event":"Success criteria met. Exiting.","logger":"airflow.task.operators.airflow.providers.standard.sensors.filesystem.FileSensor","filename":"sensor.py","lineno":250}
+{"timestamp":"2025-11-20T06:04:14.255064Z","level":"info","event":"Poking for file /opt/airflow/dags/sample.txt","logger":"airflow.task.operators.airflow.providers.standard.sensors.filesystem.FileSensor","filename":"filesystem.py","lineno":125}
+{"timestamp":"2025-11-20T06:04:14.258687Z","level":"info","event":"Found File /opt/airflow/dags/sample.txt last modified: 20251120060407","logger":"airflow.task.operators.airflow.providers.standard.sensors.filesystem.FileSensor","filename":"filesystem.py","lineno":129}
+{"timestamp":"2025-11-20T06:04:14.284663Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:04:14.285373Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:04:14.286264Z","level":"info","event":"Task operator:<Task(FileSensor): wait_for_file>","logger":"task.stdout"}

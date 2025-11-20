@@ -1,0 +1,13 @@
+{"timestamp":"2025-11-20T06:44:03.841485Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-20T06:44:03.843262Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_pipeline/weather_etl.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-20T06:44:03.879145Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_pipeline/weather_etl.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2025-11-20T06:44:03.879336Z","level":"warning","event":"The `airflow.operators.python.BranchPythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.BranchPythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_pipeline/weather_etl.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-11-20T06:44:03.923972Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:03.924676Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:03.927857Z","level":"info","event":"Current task name:notify","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:03.928468Z","level":"info","event":"Dag name:weather_etl_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:03.929104Z","level":"info","event":"Success. File saved at: /opt/airflow/dags/weather_data.csv","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:03.927035Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-20T06:44:03.949083Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:03.949719Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-20T06:44:03.950275Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): notify>","logger":"task.stdout"}
